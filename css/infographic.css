@@ -40,3 +40,16 @@
 .info-box:nth-of-type(2n) {
   background-color: var(--color-infobox-2-bg);
 }
+
+.kaffe-svg:hover {
+  filter: brightness(120%);
+}
+.dase-svg:hover {
+  filter: brightness(120%);
+}
+.tshirt-svg:hover {
+  filter: brightness(120%);
+}
+.bil-svg:hover {
+  filter: brightness(120%);
+}
