@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -37,18 +37,91 @@
       <h1>INDBERET</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>Indberet valg af metode</h2>
+          <p>Vi vil rigtig gerne have feedback til vores metoder så vi kan forbedre dem. Svar derfor gerne kort hvad der virkerede og hvor du mødte bilen på vej til supermarkedet.</p>
         </article>
-        <form id="webform"></form>
+        <form aria-label="sign-up">
+          <div class="form-group">
+            <label for="first_name">First name</label>
+            <input type="text" id="first_name" name="first_name" aria-describedby="fname-error" required />
+            <p class="error-message" id="fname-error">Please enter a value</p>
+          </div>
+
+          <div class="form-group">
+            <label for="last_name">Last name</label>
+            <input type="text" id="last_name" name="last_name" aria-describedby="lname-error" required />
+            <p class="error-message" id="lname-error">Please enter a value</p>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" aria-describedby="email-error" required />
+            <p class="error-message" id="email-error">Please enter a value</p>
+          </div>
+
+          <div class="form-group">
+            <label for="telefon">Telefon</label>
+            <input type="tel" id="telefon" name="telefon" aria-describedby="telefon-error" required />
+            <p class="error-message" id="telefon-error">Please enter a value</p>
+          </div>
+
+          <div class="form-group">
+            <label for="bilen?">Hvor så du bilen?</label>
+            <input type="text" id="bilen" name="bilen" aria-describedby="bilen-error" />
+            <p class="error-message" id="bilen-error">Please enter a value</p>
+          </div>
+
+          <div class="form-group">
+            <legend class="title">Hvad for et hjælpemiddel anvendet du?</legend>
+            <div>
+              <input type="radio" value="Kaffe" name="hjælpemiddel" />
+              Kaffe spray
+            </div>
+            <div>
+              <input type="radio" value="Dyr" name="hjælpemiddel" />
+              Efterlign dig til et dyr
+            </div>
+            <div>
+              <input type="radio" value="tøj" name="hjælpemiddel" />
+              Bær rødt tøj
+            </div>
+            <div>
+              <input type="radio" value="andet" name="hjælpemiddel" />
+              Andet
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="terms">
+              <input type="checkbox" id="terms" name="accept_terms" value="yes" aria-describedby="terms-error" required />
+              Accept terms
+            </label>
+          </div>
+
+          <button>Sign up</button>
+        </form>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
         <article>
-          <p class="placeholder">Opsummering</p>
+          <h3>First name:</h3>
+          <span id="firstNameOutput"></span>
+          <h3>Last name:</h3>
+          <span id="lastNameOutput"></span>
+          <h3>Email:</h3>
+          <span id="emailOutput"></span>
+          <h3>Telefon:</h3>
+          <span id="telefonOutput"></span>
+          <h3>Hvor så du bilen?:</h3>
+          <span id="bilenOutput"></span>
+          <h3>Hvad for et hjælpemiddel anvendte du?:</h3>
+          <span id="hjælpemiddelOutput"></span>
+          <h3>Accept terms:</h3>
+          <span id="termsOutput"></span>
         </article>
       </section>
     </main>
+
     <footer>
       <nav class="some">
         <ul>
@@ -76,6 +149,6 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/register.js"></script>
   </body>
 </html>
