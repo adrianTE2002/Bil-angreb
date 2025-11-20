@@ -136,7 +136,7 @@ nav a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 3.6rem;
+  /* height: 3.6rem; */
 }
 
 #logotype-wrapper > a {
@@ -145,8 +145,11 @@ nav a {
   font-weight: var(--font-weight-medium);
   width: max-content;
   margin-left: 1rem;
+  padding: 1.8rem;
 }
-
+#logotype-wrapper img {
+  height: 70px;
+}
 /* Global menu */
 header nav li a {
   margin: 1.5rem;
