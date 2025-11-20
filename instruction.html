@@ -12,19 +12,26 @@
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
     <link rel="stylesheet" href="css/infographic.css" />
+    <link rel="stylesheet" href="css/forside.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
   <body id="instruction">
     <header>
+      <label>
+        <input id="theme-toggle" role="switch" type="checkbox" />
+      </label>
+
       <nav>
         <div id="logotype-wrapper" class="logo">
           <a href="index.html"> LOGO-TYPE </a>
         </div>
         <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+          <li><a class="menuItem" href="instruction.html">Nærkontakt</a></li>
           <li><a class="menuItem" href="register.html">Indberet</a></li>
+          <li></li>
         </ul>
+
         <button class="burger">
           <span class="line"></span>
           <span class="line"></span>
@@ -34,8 +41,8 @@
     </header>
 
     <main>
-      <h1>INSTRUKTION</h1>
-      <p>Underoverskrift</p>
+      <h1>Nærkontakt med en bil</h1>
+      <p>3 overlevelses-strategier, hvis du kommer tæt på en bil.</p>
       <section class="info-graphic">
         <svg id="Lag_1" data-name="Lag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 436.51 422.23">
           <defs>
@@ -785,10 +792,10 @@
       <section class="info-text">
         <h2>Hvad skal du gøre?</h2>
         <article>
-          <p class="placeholder">INFO-TEKST</p>
+          <p class="placeholder"></p>
         </article>
-        <aside id="efficiency" class="info-box">INFO-BOX</aside>
-        <aside id="requirement" class="info-box">INFO-BOX</aside>
+        <aside id="efficiency" class="info-box">Instruktion</aside>
+        <aside id="requirement" class="info-box">Effektivtet</aside>
       </section>
     </main>
 
@@ -817,6 +824,7 @@
           <li><a href="">link</a></li>
         </ul>
       </nav>
+      <button id="btn">Klik dog</button>
     </footer>
     <script src="js/burger.js"></script>
     <script src="js/main.js"></script>

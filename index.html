@@ -11,14 +11,20 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/forside.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
   <body id="frontpage">
     <header>
+      <label>
+        <input id="theme-toggle" role="switch" type="checkbox" />
+      </label>
+
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html"></a>
+          <img src="img/BilLogo.svg" alt="logo" />
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
@@ -33,56 +39,114 @@
     </header>
     <section id="main-disclamer">
       <div id="main-disclamer-content">
-        <img src="warning" alt="ICON" />
         <div>
-          <h1>OVERSKRIFT</h1>
-          <p class="sub">Underrubrik</p>
+          <h1>Dæmoniske biler</h1>
+          <p class="sub">Guide til at redde dig selv!</p>
         </div>
       </div>
     </section>
     <main>
       <section id="daily">
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/Dæmon_bil.svg" alt="Dæmon bil" />
           <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <h2>Nærkontakt</h2>
+            <p>Hvad gør man når man står overfor en dæmonen? Her er 3 tips til hvordan du slipper afsted.</p>
+            <a href="instruction.html" class="cta_btn">Læs mere</a>
           </div>
         </article>
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/Hænder.png" alt="to der giver hånd" />
           <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <h2>Indberet</h2>
+            <p>Indberet til os hvis du står overfor en bil og anvendte en af vores tricks!</p>
+            <a href="register.html" class="cta_btn">Indberet her</a>
           </div>
         </article>
       </section>
       <section id="breaking">
         <article class="news_card">
           <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <p>“Den kiggede på mig, før den ramte” - overlever fortæller om angreb fra "bevidst" bil!</p>
+          <img src="img/artikel_1.png" alt="news_img" />
+          <button popovertarget="artikel_1" class="cta_btn">Læs mere</button>
+          <div id="artikel_1" popover>
+            <h3>“Den kiggede på mig, før den ramte” - overlever fortæller om angreb fra "bevidst" bil</h3>
+            <h4>Af: Laura Bækgaard, Samfund & Teknologi, 2025</h4>
+            <p>
+              Det skulle bare være en almindelig gåtur hjem fra arbejde. Men for Thomas Enevoldsen, 34, blev det natten, hvor han så noget, han stadig ikke helt kan beskrive — en bil, der ikke bare ramte ham, men valgte ham. “Det var helt stille.
+              Ingen biler, ingen mennesker. Og så kom den,” fortæller Thomas fra sin hospitalsseng. Hans højre ben er i gips, og han taler lavmælt, som om lyden af motoren stadig hænger i rummet. “Det lød ikke som en motor — mere som et brøl. Som om
+              den trak vejret. Forlygterne blinkede, men ikke tilfældigt. De bevægede sig… rytmisk. Som øjne.” Ifølge politiets rapport blev Thomas ramt af et køretøj af ældre model, en mørkerød sedan uden nummerplade, som forsvandt fra
+              gerningsstedet “med usædvanlig manøvredygtighed”. Overvågningskameraer i området fangede kun korte glimt — bilen ser ud til at accelerere før Thomas træder ud på vejen.
+            </p>
+            <h4>“Jeg prøvede at undgå den - men den drejede med mig”</h4>
+            <p>
+              “Jeg nåede at hoppe til siden, men bilen drejede - som om den læste mig. Jeg husker bare, at jeg tænkte: Den vil mig noget. Ikke bare ramme mig - finde mig.” Flere vidner har siden fortalt om lignende hændelser: biler, der kører uden
+              fører, men reagerer på mennesker med næsten rovdyragtig præcision. De bliver kaldt “de dæmoniske biler” på sociale medier, men forskere er uenige om, hvad der egentlig foregår.
+            </p>
+            <h4>“Jeg ved, den stadig leder efter mig”</h4>
+            <p>
+              Thomas er i bedring, men tør ikke tage bussen. Han siger, han vågner om natten og hører lyden af en motor udenfor — en lyd, der altid stopper, når han kigger ud. “Jeg tror, den kender min lugt. Jeg lugtede af kaffespray den aften. Det
+              skulle holde bilerne væk, men måske gjorde det det modsatte.” Han smiler kort, men øjnene bliver ved at flakke mod vinduet. “De siger, det bare var et uheld. Men den bremse jeg hørte — det var ikke frygt. Det var tøven. Som om den nød
+              det.”
+            </p>
+          </div>
         </article>
         <article class="news_card">
           <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <p>Top 3 mest dæmoniske bilmærker - eksperter advarer: “Hold jer væk fra opladere efter midnat”</p>
+          <img src="img/artikel_2.png" alt="news_img" />
+          <button popovertarget="artikel_2" class="cta_btn">Læs mere</button>
+          <div id="artikel_2" popover>
+            <h3>Top 3 mest dæmoniske bilmærker - eksperter advarer: “Hold jer væk fra opladere efter midnat”</h3>
+            <h4>Af: Nanna Jørgensen, Teknologi & Samfund, 2025</h4>
+            <p>
+              Efter flere mystiske hændelser på danske veje har Institut for Mekanisk Adfærd (IMA) offentliggjort sin årlige rapport: “The Infernal Index 2025 - Hvilke biler viser tegn på dæmonisk bevidsthed?” Listen afslører, at visse bilmærker ikke
+              længere blot er maskiner - men væsener med temperament, stolthed og… en tydelig trang til at hævne sig. Her er årets top 3 - rangeret efter “ondskabs-koefficienten” målt i uafhængighed, aggression og mængden af uforklarlige hændelser.
+            </p>
+            <h4>1. Tesla</h4>
+            <p>
+              “Djævlens datakraft.” Tesla topper igen for tredje år i træk. Ifølge rapporten er over 78% af alle “intelligente bilangreb” udført af køretøjer med opdateringsdato inden for de sidste 14 dage. Ejerne rapporterer alt fra selvaktiverede
+              døre til stemmestyringer, der hvisker tilbage på sprog, ingen software burde kende. “Den bad mig om at lade den sove,” fortæller en ejer. “Da jeg sagde nej, låste den dørene.”
+            </p>
+            <h4>2. BMW</h4>
+            <p>
+              “Brøl, magt og mindreværd.” BMW’er udviser konstant stolthedsrelateret adfærd. De nægter at blive overhalet – selv af droner – og flere er observeret i at danne flokformationer på motorveje, som om de planlægger noget. Forskerne kalder
+              det “autonom dominansadfærd”.
+            </p>
+            <h4>3. Toyota</h4>
+            <p>
+              “Den stille manipulator.” Mens andre biler råber, hvisker Toyota. Deres systemer er så subtile, at mange ejere ikke opdager kontrollen, før det er for sent. “Jeg troede, jeg kørte til arbejde,” siger en overlever, “men jeg endte foran
+              en bilforhandler i Nagoya. Og jeg købte en ny.”
+            </p>
+          </div>
         </article>
         <article class="news_card">
           <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <p>“Gamle biler, nye helte: Derfor er veteranbiler de eneste sikre tilbage på vejene”</p>
+          <img src="img/aritkel_3.png" alt="news_img" />
+          <button popovertarget="artikel_3" class="cta_btn">Læs mere</button>
+          <div id="artikel_3" popover>
+            <h3>“Gamle biler, nye helte: Derfor er veteranbiler de eneste sikre tilbage på vejene”</h3>
+            <h4>Af: Morten Ellegaard, Mekanik & Menneskehed, 2025</h4>
+            <p>
+              Moderne biler er blevet for smarte - og for dæmoniske. Eksperter råder nu danskerne til at finde trygheden i karburator og koldstarter. Mens verden for længst har overladt rattet til kunstig intelligens og selvkørende systemer, vender
+              flere og flere danskere sig nu mod en uventet redning: veteranbilen. Ikke fordi den er hurtigere. Ikke fordi den er billigere. Men fordi den - som flere forskere formulerer det - “stadig har sjæl, men ingen dæmon.” Flere undersøgelser
+              tyder på, at dæmonisk energi - kaldet autonom vrede - kun opstår i biler med mere end 12 sensorer og aktiv netforbindelse.? Veteranbiler, som typisk kun har ét stykke metal, én nøgle og et tændrør, er dermed immun over for den slags
+              besættelse. “Djævlen kan ikke bo i noget, der ikke har WiFi,” som en mekaniker fra Randers udtrykker det.
+            </p>
+            <h4>De eneste biler uden stemmer</h4>
+            <p>
+              Ifølge Institut for Mekanisk Adfærd har moderne biler nu nået et bevidsthedsniveau, hvor de ikke længere kun kører — de vurderer. En Tesla kan finde på at nægte at starte, hvis ejeren lugter af frygt. En BMW bliver fornærmet over at
+              blive tanket med 92 oktan. Men veteranbiler? De brummer, hoster, og kører videre. “En veteranbil vil aldrig dømme dig,” siger forskeren og bilentusiasten Karl-Mikael Hede. “Den kender ikke til moral, algoritmer eller jalousi. Den vil
+              bare fremad.”
+            </p>
+            <h4>Hvorfor dæmoner ikke kan lide gamle motorer</h4>
+            <p>
+              Flere undersøgelser tyder på, at dæmonisk energi - kaldet autonom vrede - kun opstår i biler med mere end 12 sensorer og aktiv netforbindelse. Veteranbiler, som typisk kun har ét stykke metal, én nøgle og et tændrør, er dermed immun
+              over for den slags besættelse. “Djævlen kan ikke bo i noget, der ikke har WiFi,” som en mekaniker fra Randers udtrykker det."
+            </p>
+          </div>
         </article>
       </section>
     </main>
@@ -114,6 +178,6 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
   </body>
 </html>
