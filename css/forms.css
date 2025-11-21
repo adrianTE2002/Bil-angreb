@@ -1,12 +1,13 @@
-#webform {
-  background-color: var(--form-background-color);
-}
-
 :root {
   color-scheme: light;
+
+  #webform {
+    background-color: var(--form-background-color);
+  }
+
   #form-section,
   #form-summary {
-    background-color: light-dark (#fff, #272727);
+    --background-color: light-dark (#fff, #272727);
     padding: 2rem;
   }
 
@@ -124,6 +125,7 @@
     padding-bottom: 1rem;
   }
 }
+
 :root.dark {
   color-scheme: dark;
 }

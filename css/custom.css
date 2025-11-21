@@ -68,6 +68,8 @@
   --color-info-bg: light-dark(#ffffff, #272727);
   --color-infobox-1-bg: light-dark(#fceb94, #777153);
   --color-infobox-2-bg: light-dark(#def5db, #586556);
+
+  --form-background-color: light-dark(#fff, #272727);
 }
 
 :root.dark {
